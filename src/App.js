@@ -65,9 +65,12 @@ function Board() {
       <Button
         w="100px"
         h="100px"
-        variant="outline"
+        variant="solid"
         borderWidth="2px"
         borderColor="gray"
+        colorScheme='cyan'
+        fontSize='5xl'
+        color='yellow'
         onClick={() => selectSquareHandler(i)}
       >
         {squares[i]}
@@ -93,9 +96,8 @@ function Board() {
         {renderSquare(7)}
         {renderSquare(8)}
       </Flex>
-      <Button onClick={restart}>
-        {/* Todo: styling restart */}
-        restart
+      <Button onClick={restart}variant='solid' colorScheme='green'>
+        Restart 
       </Button>
     </VStack>
   );
